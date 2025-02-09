@@ -7,12 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoginView: View {
     var body: some View {
-        
+        VStack {
+            Text("Login Page")
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    LoginView()
 }

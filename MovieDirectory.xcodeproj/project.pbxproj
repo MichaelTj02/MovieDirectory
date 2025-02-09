@@ -29,20 +29,52 @@
 		4CFD2E852D4C2B0500A060F4 /* MovieDirectoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieDirectoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4C631EE92D594CEA0067174D /* Exceptions for "Tests" folder in "MovieDirectory" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				UITests/MovieDirectoryUITests.swift,
+				UITests/MovieDirectoryUITestsLaunchTests.swift,
+				UnitTests/MovieDirectoryTests.swift,
+			);
+			target = 4CFD2E6A2D4C2B0400A060F4 /* MovieDirectory */;
+		};
+		4C631EEA2D594CEA0067174D /* Exceptions for "Tests" folder in "MovieDirectoryTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				UnitTests/MovieDirectoryTests.swift,
+			);
+			target = 4CFD2E7A2D4C2B0500A060F4 /* MovieDirectoryTests */;
+		};
+		4C631EF02D594CED0067174D /* Exceptions for "Tests" folder in "MovieDirectoryUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				UITests/MovieDirectoryUITests.swift,
+				UITests/MovieDirectoryUITestsLaunchTests.swift,
+			);
+			target = 4CFD2E842D4C2B0500A060F4 /* MovieDirectoryUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4CFD2E6D2D4C2B0400A060F4 /* MovieDirectory */ = {
+		4C631EE52D594CCE0067174D /* Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MovieDirectory;
+			exceptions = (
+				4C631EE92D594CEA0067174D /* Exceptions for "Tests" folder in "MovieDirectory" target */,
+				4C631EEA2D594CEA0067174D /* Exceptions for "Tests" folder in "MovieDirectoryTests" target */,
+				4C631EF02D594CED0067174D /* Exceptions for "Tests" folder in "MovieDirectoryUITests" target */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		4CFD2E7E2D4C2B0500A060F4 /* MovieDirectoryTests */ = {
+		4C631EF72D594DA50067174D /* Assets */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MovieDirectoryTests;
+			path = Assets;
 			sourceTree = "<group>";
 		};
-		4CFD2E882D4C2B0500A060F4 /* MovieDirectoryUITests */ = {
+		4CFD2E6D2D4C2B0400A060F4 /* Source */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MovieDirectoryUITests;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +107,9 @@
 		4CFD2E622D4C2B0400A060F4 = {
 			isa = PBXGroup;
 			children = (
-				4CFD2E6D2D4C2B0400A060F4 /* MovieDirectory */,
-				4CFD2E7E2D4C2B0500A060F4 /* MovieDirectoryTests */,
-				4CFD2E882D4C2B0500A060F4 /* MovieDirectoryUITests */,
+				4C631EF72D594DA50067174D /* Assets */,
+				4C631EE52D594CCE0067174D /* Tests */,
+				4CFD2E6D2D4C2B0400A060F4 /* Source */,
 				4CFD2E6C2D4C2B0400A060F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,7 +140,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4CFD2E6D2D4C2B0400A060F4 /* MovieDirectory */,
+				4C631EE52D594CCE0067174D /* Tests */,
+				4C631EF72D594DA50067174D /* Assets */,
+				4CFD2E6D2D4C2B0400A060F4 /* Source */,
 			);
 			name = MovieDirectory;
 			packageProductDependencies = (
@@ -130,9 +164,6 @@
 			dependencies = (
 				4CFD2E7D2D4C2B0500A060F4 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				4CFD2E7E2D4C2B0500A060F4 /* MovieDirectoryTests */,
-			);
 			name = MovieDirectoryTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +183,6 @@
 			);
 			dependencies = (
 				4CFD2E872D4C2B0500A060F4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				4CFD2E882D4C2B0500A060F4 /* MovieDirectoryUITests */,
 			);
 			name = MovieDirectoryUITests;
 			packageProductDependencies = (
