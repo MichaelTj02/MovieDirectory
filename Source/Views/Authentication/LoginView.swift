@@ -8,12 +8,35 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var email = ""
+    @State private var password = ""
+    
+    
     var body: some View {
-        VStack {
-            Text("Login Page")
-            TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: username)
-            TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            
+            VStack (spacing: 20) {
+                Text("Movie Directory App")
+                .font(.largeTitle)
+                    .fontWeight(.bold)
+                
+                VStack {
+                    TextField("Email", text: $email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.none)
+                    
+                    SecureField("Password", text: $password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                }.padding(.horizontal)
+                
+                Button("Login") {
+                    Task {
+                        
+                    }
+                }
+            }
         }
+        .padding(.horizontal)
     }
 }
 
