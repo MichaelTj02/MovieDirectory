@@ -13,7 +13,7 @@ class AuthViewModel: ObservableObject {
     @Published var errorMessage: String = ""
     
     init() {
-        self.user = Auth.auth().currentUser
+        self.user = Auth.auth().currentUser // return currently signed in user if there is one
     }
 }
 
